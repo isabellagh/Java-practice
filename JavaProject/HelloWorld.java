@@ -37,5 +37,17 @@ public class HelloWorld {
         long myMaxLongValue = Long.MAX_VALUE;
         System.out.println("Long Minimum Value = " + myMinLongValue);
         System.out.println("Long Minimum Value = " + myMaxLongValue);
+
+
+        float myMinFloatValue = Float.MIN_VALUE;
+        float myMaxFloatValue = Float.MAX_VALUE;
+        System.out.println("Float Minimum Value = " + myMinFloatValue);
+        System.out.println("Float Minimum Value = " + myMaxFloatValue);
+
+
+        double myMinDoubleValue = Double.MIN_VALUE;
+        double myMaxDoubleValue = Double.MAX_VALUE;
+        System.out.println("Double Minimum Value = " + myMinDoubleValue);
+        System.out.println("Double Minimum Value = " + myMaxDoubleValue);
     }
 }
