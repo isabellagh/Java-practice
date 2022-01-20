@@ -19,5 +19,12 @@ public class HelloWorld {
         System.out.println("Integer Maximum Value = " + myMaxIntValue);
         System.out.println("Busted Maximum Value = " + (myMaxIntValue + 1));
         System.out.println("Busted Minimum Value = " + (myMinIntValue - 1));
+
+        // Byte Variables with max and min values
+        byte myMinByteValue = Byte.MIN_VALUE;
+        byte myMaxByteValue = Byte.MAX_VALUE;
+        System.out.println("Byte Minimum Value = " + myMinByteValue);
+        System.out.println("Byte Minimum Value = " + myMaxByteValue);
+
     }
 }
