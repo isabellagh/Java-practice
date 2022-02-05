@@ -4,12 +4,31 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.Random;
 
-import javax.swing.JPanel;
-
-public class GamePanel extends JPanel implements ActionListener {
+public class GamePanel extends JPanel implements ActionListener{
     
+    static final int SCREEN_WIDTH = 600;
+    static final int SCREEN_HEIGHT = 600;
+    static final int UNIT_SIZE = 25;
+    static final int GAME_UNITS = (SCREEN_WIDTH*SCREEN_HEIGHT)/UNIT_SIZE;
+    static final int DELAY = 75; // SPEED OF THE SNAKE
+    final int x[] = new int[GAME_UNITS]; //coordinate
+    final int y[] = new int[GAME_UNITS]; // coordinate
+    int bodyParts = 6; // initial body pieces
+    int applesEaten;
+    int appleX;
+    int appleY;
+    char direction = 'R'; // start snake going right
+    boolean running = false;
+    Timer timer;
+    Random random;
+
     GamePanel(){
-        
+        random = new Random();
+        this.setPreferredSize(new Dimension(SCREEN_WIDTH,SCREEN_HEIGHT));
+        this.setBackground(Color.black);
+        this.setFocusable(true);
+        this.addKeyListener(new MyKeyAdapter());
+        startGame();
     }
     public void startGame() {
 
