@@ -60,5 +60,8 @@ public class HelloWorld {
         char myUnicodeChar = '\u0044';
         System.out.println(myChar);
         System.out.println(myUnicodeChar);
+
+        // boolean (true / false)
+        // string (is a datatype in Java, which is not a primitive type)
     }
 }
