@@ -1,7 +1,9 @@
 package Snake.src;
-import java.awt.Graphics;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import java.util.Random;
+
 import javax.swing.JPanel;
 
 public class GamePanel extends JPanel implements ActionListener {
@@ -28,10 +30,19 @@ public class GamePanel extends JPanel implements ActionListener {
 
     }
     public void gameOver(Graphics g) {
-        
+
     }
     @Override
     public void actionPerformed(ActionEvent e) {
+        // TODO Auto-generated method stub
         
     }
+
+    public class MyKeyAdapter extends KeyAdapter{
+        @Override
+        public void keyPressed(KeyEvent e){
+
+        }
+    }
+
 }
